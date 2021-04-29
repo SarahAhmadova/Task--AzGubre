@@ -57,12 +57,12 @@ a:hover {
 }
 
 #banner .slide-1 .title span:first-child {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 300;
 }
 
 #banner .slide-1 .title span:last-child {
-  font-size: 6vw;
+  font-size: 4.5vw;
 }
 
 #banner .slide-1 .title hr {
@@ -79,7 +79,7 @@ a:hover {
   bottom: 10%;
   background-color: rgba(0, 44, 122, 0.79);
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-weight: 300;
   line-height: 28px;
   height: 90px;
