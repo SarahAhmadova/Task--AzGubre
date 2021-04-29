@@ -17,8 +17,27 @@ body {
     * {
         font-family: "Roboto";
     }
+    section{
+        overflow: hidden;
+    }
 }
 
+.owl-nav{
+    button{
+        position: absolute;
+        font-size: 60px!important;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ccc!important;
+        &.owl-prev{
+            left: -60px;
+        }
+        &.owl-next{
+            right: -60px;
+        }
+    }
+
+}
 header {
     background-color: $bg-color;
     color: $font-color;
