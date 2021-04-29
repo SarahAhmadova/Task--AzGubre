@@ -1,0 +1,81 @@
+#banner {
+    height: 600px;
+
+    .slide-1 {
+        background-image: url("../images/banner");
+        background-size: cover;
+        position: relative;
+        height: 100%;
+
+        .title {
+            background-color: rgba(72, 123, 47, 0.62);
+            color: $font-color;
+            height: 40%;
+            width: 75%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom-right-radius: 240px;
+            border-top-right-radius: 240px;
+            padding-right: 10%;
+            position: absolute;
+            top: 23%;
+            bottom: 2%;
+            letter-spacing: 2px;
+
+            span:first-child {
+                font-size: 4vw;
+                font-weight: 300;
+            }
+
+            span:last-child {
+                font-size: 6vw;
+            }
+
+            hr {
+                display: inline-block;
+                opacity: 1;
+                width: 8vw;
+                color: $font-color;
+                margin: 0;
+            }
+        }
+
+        .title-2 {
+            position: absolute;
+            right: 0;
+            bottom: 10%;
+            background-color: rgba(0, 44, 122, 0.79);
+            color: $font-color;
+            font-size: 3vw;
+            font-weight: 300;
+            line-height: 28px;
+            height: 90px;
+            width: 80%;
+            border-top-left-radius: 90px;
+            border-bottom-left-radius: 90px;
+            padding-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .slide-dots {
+                margin-right: 10%;
+
+                span {
+                    height: 13px;
+                    width: 13px;
+                    margin: 0 10px;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border: .5px solid $font-color;
+
+                    &.active {
+                        background-color: $font-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    transition: .3s;
+    &:hover{
+        color: unset;
+    }
+}

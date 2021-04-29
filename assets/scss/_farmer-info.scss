@@ -1,0 +1,30 @@
+#farmer-info {
+    background-color: $bg-color;
+    position: relative;
+    overflow: hidden;
+    padding: 80px;
+
+    .bg-img {
+        position: absolute;
+        top: -13em;
+        right: -10em;
+
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+            border: 1px solid #5DA23B;
+            color: $font-color;
+            border-radius: 29px;
+            padding: 10px 20px;
+            margin: 20px 0;
+            line-height: 24px;
+            font-size: 20px;
+        }
+    }
+
+}

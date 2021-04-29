@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import "reset";
+@import "variables";
+@import "banner";
+@import "articles";
+@import "news";
+@import "products";
+@import "blog";
+@import "farmer-info";
+@import "address";
+@import "footer";
+
+
+body {
+    background-color: black;
+
+    * {
+        font-family: "Roboto";
+    }
+}
+
+header {
+    background-color: $bg-color;
+    color: $font-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Roboto";
+    letter-spacing: 1.5px;
+
+    a {
+        color: $font-color;
+    }
+
+    .top-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.74);
+        justify-content: center;
+
+        &>div:not(:last-child) {
+            border-right: 1px solid $font-color;
+        }
+
+        &>div {
+            padding: 1.2em 1.4em;
+        }
+
+
+
+
+    }
+
+    select {
+        background-color: transparent;
+        border: none;
+        height: 100%;
+        color: $font-color !important;
+        text-transform: uppercase;
+        outline: none;
+
+        option {
+            color: $bg-color !important;
+        }
+    }
+
+    .search-area {
+        width: 200px;
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            color: $font-color;
+            border: none;
+            outline: none;
+            text-transform: uppercase;
+
+            &::placeholder {
+                color: $font-color;
+            }
+        }
+
+        button {
+            background-color: unset;
+            outline: none;
+            border: none;
+        }
+
+    }
+
+    .weather {
+        i::before {
+            margin-left: 4px;
+            margin-top: -1px;
+            font-size: 18px;
+        }
+    }
+
+    .mobile-menu {
+        .info-bar {
+            background-color: #002d7ab9;
+
+            padding: 30px 30px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+            }
+
+            .search-area {
+                width: 100%;
+                margin: auto;
+                position: relative;
+
+                input {
+                    padding: 5px 40px 5PX 20PX;
+                    border: 1px solid rgba(255, 255, 255, 0.493);
+                    border-radius: 5px;
+                    &:focus{
+                        box-shadow: 1px 0px 8px 0px #b8b8b869;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    right: 10px;
+                    height: 100%;
+                }
+            }
+        }
+
+        display: none;
+
+        .togler {
+            i {
+                font-size: 30px;
+            }
+        }
+
+        .collapsed-menu {
+            margin: auto;
+            border-radius: 10px;
+            width: 100%;
+
+            ul {
+                display: block;
+                padding: 0;
+
+                li {
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.753);
+                    }
+
+                    a {
+                        display: inline-block;
+                        padding: 10px;
+                        letter-spacing: 3px;
+                        margin-left: 10px;
+
+                        &:hover {
+                            letter-spacing: 4px;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .menu {
+        a {
+            padding: 1.25em;
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .logo {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-menu {
+        padding: 0 20px 20px;
+
+        a {
+            &:hover {
+                font-weight: 700;
+
+                svg {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        ul {
+            padding: 0;
+
+            &.social {
+                margin-left: 10px;
+
+                li {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+}
+
+.heading {
+    color: $bg-color;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 30px;
+
+    h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before,
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 66px;
+            height: 2px;
+            background-color: $bg-color;
+            margin: 30px;
+        }
+    }
+
+}
+
+#news,
+#products,
+#partners {
+    .heading {
+        color: #002C7A;
+
+        h3 {
+
+            &::before,
+            &::after {
+                background-color: #002C7A !important;
+            }
+        }
+    }
+}
+
+#farmer-info,
+#address {
+    .heading {
+        h3 {
+
+            &::before,
+            &::after {
+                background-color: $font-color;
+            }
+        }
+
+        color: $font-color;
+    }
+}
+
+a.more {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #487B2F;
+    border: 1px solid #487B2F;
+    border-radius: 24px;
+    padding: 12px 32px;
+}
+
+#partners {
+    background-color: $font-color;
+
+    img {
+        width: 90%;
+    }
+}
+svg{
+    path:hover{
+        fill: #fff;
+    }
+}
+
+
+
+@import "responsive";
